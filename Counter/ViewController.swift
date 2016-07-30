@@ -9,17 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var restartButton: UIButton!
+   
+    
+    var currentNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func refreshButtonPressed(sender: AnyObject) {
+        restartButton.hidden = true
+        currentNumber = 0
+        updateNumber()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func plusButtonPressed(sender: AnyObject) {
+        showRestartButton()
+        currentNumber = currentNumber + 1
+        updateNumber()
     }
 
-
+    @IBAction func minusButtonPressed(sender: AnyObject) {
+        showRestartButton()
+        currentNumber = currentNumber - 1
+        updateNumber()
+    }
+    
+    func updateNumber() {
+        numberLabel.text = "\(currentNumber)"
+    }
+    
+    func showRestartButton() {
+        restartButton.hidden = false
+    }
 }
 
