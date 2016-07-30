@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var restartButton: UIButton!
    
-    
     var currentNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func refreshButtonPressed(sender: AnyObject) {
         restartButton.hidden = true
         currentNumber = 0
