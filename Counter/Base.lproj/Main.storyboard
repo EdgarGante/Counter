@@ -40,57 +40,41 @@
                                     <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMu-JK-oS1"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-lf-B3D">
-                                <rect key="frame" x="50" y="70" width="65" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2YR-2p-3Fl"/>
-                                    <constraint firstAttribute="width" constant="65" id="8o9-mH-mHp"/>
-                                </constraints>
-                                <state key="normal" image="refreshButton"/>
-                                <connections>
-                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SI4-w1-S0B"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="It6-DD-M4g">
                                 <rect key="frame" x="272" y="231" width="56" height="137"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="100"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-lf-B3D">
+                                <rect key="frame" x="280" y="388" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="A08-Gy-fZD"/>
+                                    <constraint firstAttribute="width" constant="40" id="des-FC-7p8"/>
+                                </constraints>
+                                <state key="normal" image="refreshButton"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SI4-w1-S0B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.074509803921568626" green="0.10980392156862745" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DHH-lf-B3D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="706-uz-HZa"/>
+                            <constraint firstItem="It6-DD-M4g" firstAttribute="centerX" secondItem="DHH-lf-B3D" secondAttribute="centerX" id="5PY-og-ObV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cbD-0d-kBI" secondAttribute="bottom" constant="50" id="8Cp-BK-4Bk"/>
-                            <constraint firstItem="It6-DD-M4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Go0-9u-lrH"/>
+                            <constraint firstItem="It6-DD-M4g" firstAttribute="top" secondItem="DHH-lf-B3D" secondAttribute="bottom" constant="20" id="BdO-PT-DTP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Cu-OT-CVL" secondAttribute="bottom" constant="50" id="Iqv-q9-pog"/>
                             <constraint firstItem="0Cu-OT-CVL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="ONr-AI-mIA"/>
-                            <constraint firstItem="It6-DD-M4g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W7h-EA-xS6"/>
-                            <constraint firstItem="It6-DD-M4g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPF-Lz-Sw6"/>
+                            <constraint firstItem="DHH-lf-B3D" firstAttribute="top" secondItem="It6-DD-M4g" secondAttribute="bottom" constant="20" id="QOi-L0-HNF"/>
                             <constraint firstItem="It6-DD-M4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bCK-3b-yFk"/>
-                            <constraint firstItem="It6-DD-M4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKl-r9-SKe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cbD-0d-kBI" secondAttribute="trailing" constant="50" id="kt7-QO-w9c"/>
-                            <constraint firstItem="DHH-lf-B3D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="oxX-Kt-NhN"/>
+                            <constraint firstItem="DHH-lf-B3D" firstAttribute="centerX" secondItem="It6-DD-M4g" secondAttribute="centerX" id="qXS-ap-aDo"/>
                             <constraint firstItem="It6-DD-M4g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zow-y5-Jvo"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Go0-9u-lrH"/>
-                                <exclude reference="W7h-EA-xS6"/>
-                                <exclude reference="aPF-Lz-Sw6"/>
-                                <exclude reference="cKl-r9-SKe"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="Go0-9u-lrH"/>
-                                <include reference="W7h-EA-xS6"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="aPF-Lz-Sw6"/>
-                                <include reference="cKl-r9-SKe"/>
+                                <exclude reference="5PY-og-ObV"/>
+                                <exclude reference="BdO-PT-DTP"/>
                             </mask>
                         </variation>
                     </view>
@@ -101,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339.75" y="429"/>
+            <point key="canvasLocation" x="339" y="429"/>
         </scene>
     </scenes>
     <resources>
