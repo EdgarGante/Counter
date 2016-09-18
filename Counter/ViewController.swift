@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberLabel.alpha = 0.4
         
         let background = CAGradientLayer().deepBlueGradientViewBackground()
         background.frame = self.view.bounds
@@ -26,7 +27,8 @@ class ViewController: UIViewController {
         restartButton.isHidden = true
         currentNumber = 0
         updateNumber()
-        updateColorLabel()
+        numberLabel.alpha = 0.4
+        restartButton.isHidden = true
 
     }
 
@@ -35,8 +37,7 @@ class ViewController: UIViewController {
         currentNumber = currentNumber + 1
         updateNumber()
         printCurrentNumber()
-        updateColorLabel()
-
+        addAlpha()
     }
 
     @IBAction func minusButtonPressed(_ sender: AnyObject) {
@@ -44,8 +45,7 @@ class ViewController: UIViewController {
         currentNumber = currentNumber - 1
         updateNumber()
         printCurrentNumber()
-        updateColorLabel()
-
+        addAlpha()
     }
     
     func updateNumber() {
@@ -60,15 +60,8 @@ class ViewController: UIViewController {
         print("Number:", currentNumber)
     }
     
-    func updateColorLabel() {
-        if currentNumber == 0 {
-            numberLabel.textColor = UIColor.white
-        } else if currentNumber < 0 {
-            numberLabel.textColor = UIColor.white
-        } else {
-            numberLabel.textColor = UIColor.white
-        }
+    func addAlpha() {
+        numberLabel.alpha.add(0.01)
     }
-    
 }
 

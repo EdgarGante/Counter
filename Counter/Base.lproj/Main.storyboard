@@ -16,10 +16,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-lf-B3D">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHH-lf-B3D">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="Cdb-Je-ZhQ"/>
                                     <constraint firstAttribute="height" constant="40" id="aVg-EA-v4A"/>
@@ -29,20 +29,15 @@
                                     <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SI4-w1-S0B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-tA-9mf">
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="200"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ki3-w7-tUZ">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbD-0d-kBI" userLabel="plusButton">
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbD-0d-kBI" userLabel="plusButton">
                                         <state key="normal" image="plusButton"/>
                                         <connections>
                                             <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMu-JK-oS1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cu-OT-CVL" userLabel="minusButton">
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cu-OT-CVL" userLabel="minusButton">
                                         <state key="normal" image="minusButton"/>
                                         <connections>
                                             <action selector="minusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVz-Po-cWf"/>
@@ -53,18 +48,25 @@
                                     <constraint firstAttribute="height" constant="88" id="MAX-Ap-msi"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-tA-9mf" customClass="SpringLabel" customModule="Counter" customModuleProvider="target">
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="200"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Tr-CS-8o6"/>
+                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="top" secondItem="DHH-lf-B3D" secondAttribute="bottom" constant="5" id="8IQ-ac-Vve"/>
+                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30.5" id="INX-Ez-NVJ"/>
                             <constraint firstItem="DHH-lf-B3D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="Kga-pA-H4P"/>
                             <constraint firstItem="ki3-w7-tUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5J-7X-eCk"/>
                             <constraint firstItem="ki3-w7-tUZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="R3t-wT-ttk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dtJ-tA-9mf" secondAttribute="trailing" constant="10" id="T1i-MX-cH2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ki3-w7-tUZ" secondAttribute="trailing" constant="20" id="XIZ-aS-ByH"/>
-                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="XrZ-YL-NwM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ki3-w7-tUZ" secondAttribute="bottom" constant="50" id="it6-Mu-V9S"/>
                             <constraint firstItem="DHH-lf-B3D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qyZ-pk-7zH"/>
-                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vBl-wC-aKT"/>
-                            <constraint firstItem="ki3-w7-tUZ" firstAttribute="top" secondItem="dtJ-tA-9mf" secondAttribute="bottom" constant="8" symbolic="YES" id="vTm-jz-eVe"/>
+                            <constraint firstItem="dtJ-tA-9mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="wDO-uV-lYR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -74,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336.80000000000001" y="428.63568215892059"/>
+            <point key="canvasLocation" x="335.625" y="427.5"/>
         </scene>
     </scenes>
     <resources>
