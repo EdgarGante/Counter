@@ -10,7 +10,7 @@ import UIKit
 
     extension CAGradientLayer {
         
-        func deepBlueGradientViewBackground() -> CAGradientLayer {
+        func GradientViewBackground() -> CAGradientLayer {
             let topColor = UIColor(red: 192.0/255.0, green: 72.0/255.0, blue: 72.0/255.0, alpha: 1.0)
             let bottomColor = UIColor(red: 72.0/255.0, green: 0.0/255.0, blue: 72.0/255.0, alpha: 1.0)
             let gradientColors: [CGColor] = [topColor.cgColor, bottomColor.cgColor]

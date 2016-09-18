@@ -69,6 +69,7 @@
                             <constraint firstItem="dtJ-tA-9mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="wDO-uV-lYR"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="numberLabel" destination="dtJ-tA-9mf" id="5kl-Mx-aOC"/>
                         <outlet property="restartButton" destination="DHH-lf-B3D" id="ZTc-Pc-6tj"/>

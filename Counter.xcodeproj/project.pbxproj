@@ -102,13 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				614928E41D39B83D009B0200 /* AppDelegate.swift */,
-				614928E61D39B83D009B0200 /* ViewController.swift */,
-				614928E81D39B83D009B0200 /* Main.storyboard */,
-				9AC5EBD41D8CBC0A0059C454 /* CAGradientLayer.swift */,
-				614928EE1D39B83D009B0200 /* Assets.xcassets */,
-				614928F01D39B83D009B0200 /* LaunchScreen.storyboard */,
-				614928F31D39B83E009B0200 /* Info.plist */,
-				614928EB1D39B83D009B0200 /* Counter.xcdatamodeld */,
+				9A93E3C91D8E698F008F3587 /* Controller */,
+				9A93E3CA1D8E69A6008F3587 /* View */,
+				9A93E3CB1D8E69CD008F3587 /* Utilities */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -129,6 +125,34 @@
 				614929091D39B83E009B0200 /* Info.plist */,
 			);
 			path = CounterUITests;
+			sourceTree = "<group>";
+		};
+		9A93E3C91D8E698F008F3587 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				614928E61D39B83D009B0200 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9A93E3CA1D8E69A6008F3587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				614928E81D39B83D009B0200 /* Main.storyboard */,
+				9AC5EBD41D8CBC0A0059C454 /* CAGradientLayer.swift */,
+				614928F01D39B83D009B0200 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9A93E3CB1D8E69CD008F3587 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				614928EE1D39B83D009B0200 /* Assets.xcassets */,
+				614928F31D39B83E009B0200 /* Info.plist */,
+				614928EB1D39B83D009B0200 /* Counter.xcdatamodeld */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,9 +16,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numberLabel.alpha = 0.4
+        // Default Settings
+        UIApplication.shared.statusBarStyle = .lightContent
+        numberLabel.alpha = 0.6
         
-        let background = CAGradientLayer().deepBlueGradientViewBackground()
+        let background = CAGradientLayer().GradientViewBackground()
         background.frame = self.view.bounds
         self.view.layer.insertSublayer(background, at: 0)
     }
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         restartButton.isHidden = true
         currentNumber = 0
         updateNumber()
-        numberLabel.alpha = 0.4
+        numberLabel.alpha = 0.6
         restartButton.isHidden = true
 
     }
