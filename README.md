@@ -1,5 +1,5 @@
 # SwiftCounter
-Simple and beautiful counter (iOS9 and up).
+Simple and beautiful counter.
 
 <h2>Updated for Swift 3.0</h2>
 
