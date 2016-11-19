@@ -1,5 +1,5 @@
 # Counter
-Simple and beautiful counter written in swift 3..
+Simple and beautiful counter written in swift 3.
 
 <h2>Updated for Swift 3.0</h2>
 
